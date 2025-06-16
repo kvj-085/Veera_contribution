@@ -36,6 +36,13 @@ Implemented a pure TypeScript function (`processEntries`) that identifies and cl
 - All tests pass (`pnpm test`)
 - CSV file `Expanded_Diary_Entries.csv` used via `mockData.ts`
 - Lint fails due to TypeScript parsing and strict config (permitted per rules)
+
+---
+
+## Lint Behavior (Explained)
+
+- Lint errors (Unexpected token :, etc.) stem from .ts parsing in a js-only ESLint config.
+- Per instruction, I did not modify .eslintrc.json.
 - Removed `openai.ts` (unused and triggered unnecessary lint errors)
 
 ---
